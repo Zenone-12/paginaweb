@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380" width="680" height="380" role="img">
+<title>Il viaggio di andata e ritorno</title>
+<desc>In entrata: la domanda scritta passa dal tokenizzatore, diventa una sequenza di numeri e arriva all'IA. In uscita: l'IA produce altri numeri, il tokenizzatore li riconverte in testo e compare la risposta.</desc>
+<defs>
+  <marker id="freccia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#52514E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<style>
+  text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .etichetta { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; fill: #B23A22; }
+  .titolo { font-size: 15px; }
+  .grande { font-size: 19px; font-weight: 600; }
+</style>
+<rect width="680" height="380" fill="#FFFFFF"/>
+
+<!-- ===== IN ENTRATA ===== -->
+<text x="20" y="36" class="etichetta">IN ENTRATA →</text>
+
+<rect x="20" y="52" width="150" height="104" rx="10" fill="#E1F3EC" stroke="#0B6B4F" stroke-width="1.2"/>
+<text x="95" y="80" text-anchor="middle" class="titolo" fill="#0B6B4F">Tu scrivi</text>
+<text x="95" y="118" text-anchor="middle" class="grande" fill="#08503B">«Che ore</text>
+<text x="95" y="142" text-anchor="middle" class="grande" fill="#08503B">sono?»</text>
+
+<rect x="200" y="52" width="150" height="104" rx="10" fill="#E6F0FA" stroke="#1F5A96" stroke-width="1.2"/>
+<text x="275" y="80" text-anchor="middle" class="titolo" fill="#1F5A96">Tokenizzatore</text>
+<text x="275" y="118" text-anchor="middle" class="grande" fill="#0E3F6E">Che|ore|</text>
+<text x="275" y="142" text-anchor="middle" class="grande" fill="#0E3F6E">sono|?</text>
+
+<rect x="380" y="52" width="150" height="104" rx="10" fill="#FAEDDA" stroke="#8A5310" stroke-width="1.2"/>
+<text x="455" y="80" text-anchor="middle" class="titolo" fill="#8A5310">Numeri</text>
+<text x="455" y="118" text-anchor="middle" class="grande" fill="#6A3E08">812 · 3.041</text>
+<text x="455" y="142" text-anchor="middle" class="grande" fill="#6A3E08">977 · 30</text>
+
+<line x1="171" y1="104" x2="197" y2="104" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+<line x1="351" y1="104" x2="377" y2="104" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+<line x1="531" y1="104" x2="557" y2="104" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+
+<!-- ===== IA ===== -->
+<rect x="560" y="52" width="104" height="264" rx="14" fill="#152238"/>
+<text x="612" y="175" text-anchor="middle" font-size="44" font-weight="700" fill="#FFD166">IA</text>
+<text x="612" y="211" text-anchor="middle" font-size="14" fill="#E8ECF4">calcola</text>
+<text x="612" y="230" text-anchor="middle" font-size="14" fill="#E8ECF4">solo con</text>
+<text x="612" y="249" text-anchor="middle" font-size="14" fill="#E8ECF4">i numeri</text>
+
+<!-- ===== IN USCITA ===== -->
+<rect x="20" y="212" width="150" height="104" rx="10" fill="#E1F3EC" stroke="#0B6B4F" stroke-width="1.2"/>
+<text x="95" y="240" text-anchor="middle" class="titolo" fill="#0B6B4F">Tu leggi</text>
+<text x="95" y="278" text-anchor="middle" class="grande" fill="#08503B">«Sono</text>
+<text x="95" y="302" text-anchor="middle" class="grande" fill="#08503B">le dieci.»</text>
+
+<rect x="200" y="212" width="150" height="104" rx="10" fill="#E6F0FA" stroke="#1F5A96" stroke-width="1.2"/>
+<text x="275" y="240" text-anchor="middle" class="titolo" fill="#1F5A96">Tokenizzatore</text>
+<text x="275" y="278" text-anchor="middle" class="grande" fill="#0E3F6E">Sono|le|</text>
+<text x="275" y="302" text-anchor="middle" class="grande" fill="#0E3F6E">dieci|.</text>
+
+<rect x="380" y="212" width="150" height="104" rx="10" fill="#FAEDDA" stroke="#8A5310" stroke-width="1.2"/>
+<text x="455" y="240" text-anchor="middle" class="titolo" fill="#8A5310">Numeri</text>
+<text x="455" y="278" text-anchor="middle" class="grande" fill="#6A3E08">2.716 · 41</text>
+<text x="455" y="302" text-anchor="middle" class="grande" fill="#6A3E08">9.388 · 29</text>
+
+<line x1="557" y1="264" x2="533" y2="264" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+<line x1="377" y1="264" x2="353" y2="264" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+<line x1="197" y1="264" x2="173" y2="264" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+
+<text x="20" y="352" class="etichetta">← IN USCITA</text>
+</svg>

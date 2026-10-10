@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 680 460" width="680" height="460" role="img">
+<title>Il formicaio</title>
+<desc>Un formicaio in sezione: sopra il terreno la cupola, sotto gallerie e stanze per le uova, le larve, le provviste e la regina. Le formiche lavorano ovunque, ma nessuna conosce il progetto dell'insieme.</desc>
+<defs>
+  <!-- formica che guarda verso destra, centrata in 0,0 -->
+  <g id="formica">
+    <g stroke="#2E211A" stroke-width="1.1" stroke-linecap="round" fill="none">
+      <path d="M0 0 L-3 -6 L-6 -8 M0 0 L-3 6 L-6 8"/>
+      <path d="M1 0 L1 -7 L-1 -10 M1 0 L1 7 L-1 10"/>
+      <path d="M2 0 L5 -6 L8 -8 M2 0 L5 6 L8 8"/>
+      <path d="M9.5 -1.5 Q 12 -6 15 -6 M9.5 1.5 Q 12 6 15 6"/>
+    </g>
+    <ellipse cx="-6" cy="0" rx="5.2" ry="3.6" fill="#2E211A"/>
+    <ellipse cx="1.2" cy="0" rx="2.8" ry="2" fill="#2E211A"/>
+    <circle cx="7.6" cy="0" r="2.9" fill="#2E211A"/>
+  </g>
+  <path id="foglia" d="M0 0 Q 7 -9 1 -19 Q -6 -9 0 0 Z" fill="#5FA36F" stroke="#0B6B4F" stroke-width="1"/>
+  <ellipse id="uovo" rx="4.2" ry="3" fill="#FFFDF7" stroke="#9A8F78" stroke-width="0.9"/>
+  <ellipse id="seme" rx="3.6" ry="2.4" fill="#B77A2E" stroke="#6A3E08" stroke-width="0.8"/>
+</defs>
+<style>
+  text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+</style>
+<rect width="680" height="460" fill="#FFFFFF"/>
+
+<!-- terreno -->
+<rect x="0" y="168" width="680" height="240" fill="#DCC29C"/>
+<line x1="0" y1="168" x2="680" y2="168" stroke="#8A5310" stroke-width="1.6"/>
+<g fill="#C9AA7C">
+  <circle cx="60" cy="210" r="3"/><circle cx="110" cy="300" r="4"/><circle cx="80" cy="380" r="2.5"/>
+  <circle cx="610" cy="220" r="3.5"/><circle cx="640" cy="320" r="2.5"/><circle cx="590" cy="385" r="4"/>
+  <circle cx="350" cy="250" r="3"/><circle cx="150" cy="200" r="2"/><circle cx="560" cy="300" r="2"/>
+</g>
+
+<!-- cupola -->
+<path d="M190 169 Q 260 70 340 62 Q 420 70 490 169 Z" fill="#C9A27A" stroke="#8A5310" stroke-width="1.6"/>
+<g fill="#B38B5E">
+  <circle cx="300" cy="110" r="2.5"/><circle cx="390" cy="125" r="3"/><circle cx="250" cy="145" r="2"/><circle cx="440" cy="150" r="2.5"/>
+</g>
+
+<!-- gallerie e stanze: bordo -->
+<g fill="none" stroke="#8A5310" stroke-width="17" stroke-linecap="round">
+  <path d="M340 70 L340 180 C 340 205, 300 215, 240 236"/>
+  <path d="M340 180 C 360 210, 430 220, 480 240"/>
+  <path d="M215 268 C 208 298, 232 310, 235 322"/>
+  <path d="M505 276 C 505 300, 474 312, 462 325"/>
+  <path d="M286 352 C 320 382, 360 384, 384 362"/>
+</g>
+<g fill="#8A5310">
+  <ellipse cx="205" cy="245" rx="63" ry="30"/>
+  <ellipse cx="515" cy="250" rx="63" ry="30"/>
+  <ellipse cx="235" cy="345" rx="60" ry="28"/>
+  <ellipse cx="450" cy="352" rx="74" ry="32"/>
+</g>
+<!-- gallerie e stanze: interno -->
+<g fill="none" stroke="#F6ECDB" stroke-width="13.5" stroke-linecap="round">
+  <path d="M340 70 L340 180 C 340 205, 300 215, 240 236"/>
+  <path d="M340 180 C 360 210, 430 220, 480 240"/>
+  <path d="M215 268 C 208 298, 232 310, 235 322"/>
+  <path d="M505 276 C 505 300, 474 312, 462 325"/>
+  <path d="M286 352 C 320 382, 360 384, 384 362"/>
+</g>
+<g fill="#F6ECDB">
+  <ellipse cx="205" cy="245" rx="61.3" ry="28.3"/>
+  <ellipse cx="515" cy="250" rx="61.3" ry="28.3"/>
+  <ellipse cx="235" cy="345" rx="58.3" ry="26.3"/>
+  <ellipse cx="450" cy="352" rx="72.3" ry="30.3"/>
+</g>
+<ellipse cx="340" cy="66" rx="9" ry="4" fill="#5A3608"/>
+
+<!-- stanza delle uova -->
+<g>
+  <use href="#uovo" x="165" y="252"/><use href="#uovo" x="175" y="258"/><use href="#uovo" x="186" y="253"/>
+  <use href="#uovo" x="171" y="246"/><use href="#uovo" x="182" y="243"/><use href="#uovo" x="196" y="259"/>
+  <use href="#uovo" x="160" y="262"/><use href="#uovo" x="207" y="257"/>
+  <use href="#formica" transform="translate(232 246) scale(-1 1)"/>
+</g>
+<!-- stanza delle provviste -->
+<g>
+  <use href="#seme" x="540" y="258"/><use href="#seme" x="550" y="252"/><use href="#seme" x="532" y="250"/>
+  <use href="#seme" x="557" y="262"/><use href="#seme" x="546" y="266"/><use href="#seme" x="524" y="262"/>
+  <use href="#foglia" transform="translate(531 268) rotate(-100)"/>
+  <use href="#formica" transform="translate(490 252)"/>
+</g>
+<!-- stanza delle larve -->
+<g fill="#FFFDF7" stroke="#9A8F78" stroke-width="0.9">
+  <ellipse cx="205" cy="352" rx="7" ry="4.3" transform="rotate(-15 205 352)"/>
+  <ellipse cx="221" cy="358" rx="7" ry="4.3" transform="rotate(10 221 358)"/>
+  <ellipse cx="214" cy="344" rx="7" ry="4.3"/>
+  <ellipse cx="236" cy="351" rx="7" ry="4.3" transform="rotate(-20 236 351)"/>
+</g>
+<use href="#formica" transform="translate(262 343) scale(-1 1)"/>
+<!-- stanza della regina -->
+<use href="#formica" transform="translate(452 356) scale(2.1)"/>
+<use href="#formica" transform="translate(410 345) rotate(-15)"/>
+<use href="#formica" transform="translate(498 344) scale(-1 1) rotate(-15)"/>
+
+<!-- formiche nelle gallerie -->
+<use href="#formica" transform="translate(340 108) rotate(90)"/>
+<use href="#formica" transform="translate(340 150) rotate(-90)"/>
+<use href="#uovo" x="340" y="133"/>
+<use href="#formica" transform="translate(292 213) rotate(160)"/>
+<use href="#formica" transform="translate(418 223) rotate(20)"/>
+<use href="#seme" x="431" y="228"/>
+<use href="#formica" transform="translate(218 294) rotate(80)"/>
+<use href="#formica" transform="translate(488 301) rotate(130)"/>
+<use href="#formica" transform="translate(334 374)"/>
+
+<!-- pianta -->
+<g>
+  <path d="M618 168 C 616 140, 622 120, 618 92" fill="none" stroke="#0B6B4F" stroke-width="2.5"/>
+  <path d="M618 140 Q 595 128, 590 110 Q 610 115, 618 140 Z" fill="#5FA36F" stroke="#0B6B4F" stroke-width="1.2"/>
+  <path d="M619 122 Q 642 112, 648 94 Q 628 98, 619 122 Z" fill="#5FA36F" stroke="#0B6B4F" stroke-width="1.2"/>
+  <path d="M618 96 Q 608 80, 614 66 Q 628 80, 618 96 Z" fill="#5FA36F" stroke="#0B6B4F" stroke-width="1.2"/>
+</g>
+
+<!-- fila di formiche in superficie, con i pezzi di foglia -->
+<g>
+  <use href="#formica" transform="translate(590 162) scale(-1 1)"/>
+  <use href="#foglia" transform="translate(582 159) rotate(-10)"/>
+  <use href="#formica" transform="translate(556 162) scale(-1 1)"/>
+  <use href="#formica" transform="translate(522 162) scale(-1 1)"/>
+  <use href="#foglia" transform="translate(514 159) rotate(-10)"/>
+  <use href="#formica" transform="translate(452 121) rotate(46.7) scale(-1 1)"/>
+  <use href="#foglia" transform="translate(447 113) rotate(36)"/>
+  <use href="#formica" transform="translate(418 88) rotate(36) scale(-1 1)"/>
+  <use href="#formica" transform="translate(262 88) rotate(-36) scale(-1 1)"/>
+  <use href="#formica" transform="translate(150 162)"/>
+  <use href="#formica" transform="translate(100 162) scale(-1 1)"/>
+</g>
+
+<!-- etichette -->
+<g font-size="16" font-weight="600" fill="#5A3608" text-anchor="middle">
+  <text x="105" y="250">uova</text>
+  <text x="630" y="256">provviste</text>
+  <text x="140" y="350">larve</text>
+  <text x="572" y="358">regina</text>
+</g>
+
+<!-- didascalia -->
+<text x="340" y="440" text-anchor="middle" font-size="19" fill="#3A3935">Nessuna formica conosce il progetto: il formicaio <tspan font-weight="700" fill="#B23A22">emerge</tspan> dal lavoro di tutte.</text>
+</svg>

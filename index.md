@@ -1,6 +1,7 @@
 
 
-# Pagina informativa sull'IA
+# L'Intelligenza Artificiale
+*Per saperne di più*
 
 1. Perché questa pagina
 2. Come funziona
@@ -22,7 +23,7 @@ Cercheremo poi di raccontare come è nata l'IA e di riassumere alcuni dei temi c
 
 ## Avvertenza iniziale
 
-Questa pagina è stata scritta a partire dalla consultazione di diverse pagine web, di chat diverse IA (Gemini, ChatGPT, Claude) e grazie ad un libro di *Stefano Quintarelli* (con *Emil Abirascid*) dal titolo "La bolla dell'intelligenza artificiale" (editore Bollati Boringhieri, settembre 2026), di cui si consiglia la lettura a tutti gli interessati. Il layout della pagina (cioè il codice html e css che c'è dietro quello che state leggendo) è stato scritto da Claude sulla base delle indicazioni fornite dall'autore. Anche le immagini sono state elaborate da Claude.
+Questa pagina è stata scritta a partire dalla consultazione di diverse pagine web, di chat diverse IA (Gemini, ChatGPT, Claude) e grazie ad un libro di *Stefano Quintarelli* (con *Emil Abirascid*) dal titolo **La bolla dell'intelligenza artificiale** (editore Bollati Boringhieri, settembre 2026), di cui si consiglia la lettura a tutti gli interessati. Il layout della pagina (cioè il codice html e css che c'è dietro quello che state leggendo) è stato scritto da Claude sulla base delle indicazioni fornite dall'autore. Anche le immagini sono state elaborate da Claude.
 
 ## Come funziona
 
@@ -67,10 +68,15 @@ Funziona così: l'essere umano decide le condizioni, ovvero quali testi usare co
 *Tutto è basato su un semplice conteggio di frequenze, senza alcuna "intelligenza"*. Per questo "mento" diventa un token: non perché qualcuno abbia riconosciuto un suffisso italiano, ma perché quelle cinque lettere compaiono insieme molto spesso. Solo a questo punto, con il vocabolario ormai fissato, comincia l'addestramento del modello vero e proprio, che impara a lavorare con quei token e non li cambia più.
 
 Un'altra cosa importante da sapere: ad ogni frammento viene assegnato un numero identificativo. Perché **l'IA non legge parole ma *numeri***. Per esempio, "mento" potrebbe essere il numero 4.512 (attenzione: gli esempi non sono basati su software reali, servono solo a semplificare e aiutare a comprendere).
+
+![Il tokenizzatore taglia "appartamento" in due token e appende a ciascuno il suo numero: all'IA arrivano solo i numeri.](img/forbici_tokenizzatore.png)
+
 Il lavoro del tokenizzatore si svolge quindi in due direzioni:
 
 - *In entrata:* prende la frase che viene scritta dall'utente durante una chat, la spezza in token consultando il suo vocabolario e passa all'IA la sequenza di numeri corrispondente.
 - *In uscita:* l'IA risponde con altri numeri e il tokenizzatore li riconverte in testo leggibile.
+
+![Andata e ritorno: la domanda diventa una fila di numeri, l'IA risponde con altri numeri, il tokenizzatore li ritrasforma in parole.](img/viaggio_andata_ritorno.png)
 
 ### 4. Un frammento di parola che ne *guarda* un altro?
 
@@ -80,11 +86,11 @@ Un attimo: *un frammento di parola che guarda un altro frammento?* Che storia è
 
 Beh qui c'è uno dei fatti più interessanti da sapere, un piccolo miracolo della conoscenza senza il quale l'IA non esisterebbe o non sarebbe quella che conosciamo oggi.
 
+::: {.box}
 **Luogo:** Long Beach, California (USA).
-
 **Occasione:** 31ª Conferenza sui sistemi di elaborazione delle informazioni neurali.
-
 **Data:** 4-9 dicembre 2017.
+:::
 
 Otto ricercatori di Google Research, Google Brain e Università di Toronto presentano un paper dal titolo **Attention Is All You Need** (l'attenzione è tutto ciò di cui hai bisogno). Undici pagine (di cui due di bibliografia) che introducono il concetto di Transformer. Una sorta di super-eroe, modello "Avenger", che cambia tutto. 
 
@@ -106,9 +112,25 @@ Il *word embedding* è il modo di trasformare ogni parola in una lista di numeri
 
 Nei modelli linguistici attuali, le coordinate non sono fisse per ogni parola, ma vengono ricalcolate in base alla frase. Così "pesca" finisce in punti diversi se si parla di frutta o di canne e ami. L'*embedding* traduce le parole in coordinate, *in modo che la vicinanza nello spazio corrisponda alla vicinanza di significato*.
 
+## Ma perché è così intelligente?
+
+Abbiamo cercato di spiegare come funziona, ma siamo sicuri di non essere riusciti a rispondere alla domanda più semplice: come fa l'IA ad essere così intelligente? Chiunque oggi intrattenga una "conversazione" con una chat IA rimane stupito della sua capacità di elaborazione. Per non parlare poi di tutto quello che una IA generativa è in grado di fare oggi con le immagini, i video, la musica. E con i contenuti di tipo *professionale*: programmazione informatica, matematica, chimica, fisica, medicina, biologia. I progressi in ogni campo sono pressoché quotidiani.
+
+Una delle risposte più suggestive viene dalla fisica. Chi ne ha voglia, può ascoltarla direttamente dalla fisica **Gabriella Greison**, su CorriereTV, in un video estremamente interessante dell'8 ottobre 2026 (guarda il [video su CorriereTV](https://www.corriere.it/le-serie-del-corriere/scintille/l-ai-sta-diventando-piu-intelligente-di-noi.shtml). Titolo: "L'AI sta diventando più intelligente di noi?").
+
+Greison parte dall'esempio del **formicaio**: una struttura estremamente complessa, dove tutti collaborano alla costruzione dell'edificio e alla sua conservazione, senza che nessuno abbia scritto un "progetto" del formicaio o diriga i lavori. «In fisica una proprietà emergente è qualcosa che non esiste nei singoli componenti ma compare quando i componenti iniziano a interagire», dice Greison. E aggiunge: «Pensiamo al cervello. Un neurone è una cellula. Due neuroni sono due cellule. Ottantasei miliardi di neuroni producono Shakespeare, Mozart, Einstein, Fellini. [...] **La coscienza non vive nel singolo neurone. Emerge dalla rete**».
+
+![](img/formicaio.png)
+
+Dunque l'IA ha una coscienza? Piano, questo nessuno l'ha detto. Ma è anche vero che sono migliaia di anni che l'essere umano cerca di capire cosa sia esattamente la *coscienza*, e anche qui nessuno possiede ancora la risposta esatta e inconfutabile. 
+
+Un sistema può risolvere problemi in modo brillante senza "provare" nulla.
+
+Ogni singolo calcolo è banale, come la singola formica o il singolo neurone. Ma quando i parametri diventano centinaia di miliardi e i testi letti sono quasi tutto ciò che l'essere umano ha scritto nella storia, compaiono capacità che nessuno ha programmato. Nella ricerca si chiamano proprio **capacità emergenti** (*emergent abilities*). 
+
 ## Breve storia
 
-Elenchiamo solo alcune tappe fondamentali.
+Elenchiamo solo due tappe fondamentali. Scrivere tutta la storia dell'IA richiederebbe un libro.
 
 ### L'atto di nascita ufficiale
 
@@ -143,50 +165,20 @@ La Fondazione Rockfeller concesse circa 7.500 dollari. Il seminario si tenne nel
 
 Seguono sessant'anni in cui si alternano entusiasmi e delusioni. In particolare, l'idea delle reti neurali  viene data per morta due volte.
 
-#### 1956–1973
-#### Gli anni dell'entusiasmo
-
-Dopo Dartmouth domina l'IA "simbolica": l'intelligenza come manipolazione di simboli secondo regole logiche. I finanziamenti arrivano soprattutto dalla difesa americana (ARPA) e le promesse sono enormi: Herbert Simon prevede nel 1965 che entro vent'anni le macchine sapranno fare qualsiasi lavoro umano.
-
-- **1958**: Frank Rosenblatt presenta il Perceptron, un neurone artificiale che impara dagli esempi. È la strada alternativa, quella delle reti neurali.
-- **1966**: Joseph Weizenbaum crea ELIZA, il primo chatbot, che imita uno psicoterapeuta con semplici trucchi di riformulazione. Lo stupore di chi lo usa spaventa il suo stesso autore.
-- **1969**: Minsky e Papert pubblicano *Perceptrons*, dimostrando i limiti matematici delle reti a un solo strato. La ricerca sulle reti neurali si ferma quasi del tutto.
-
-#### 1974–1980
-#### Il primo inverno
-
-Le promesse non si avverano. Il rapporto ALPAC (1966) boccia la traduzione automatica, il rapporto Lighthill (1973) convince il governo britannico a tagliare i fondi, e ARPA fa lo stesso. Si scopre che ciò che è facile per un bambino, come riconoscere un volto o capire una frase, è difficilissimo per una macchina.
-
-#### Anni Ottanta
-#### I sistemi esperti e il secondo inverno
-
-L'IA rinasce in versione commerciale con i "sistemi esperti": programmi che racchiudono in migliaia di regole il sapere di uno specialista. Il Giappone lancia nel 1982 il progetto dei computer di "quinta generazione". Ma questi sistemi sono costosi, rigidi e incapaci di imparare: a fine decennio il mercato crolla.
-
-Intanto, quasi inosservato, nel **1986** Rumelhart, Hinton e Williams rendono popolare la *retropropagazione*, il metodo per addestrare reti a più strati. È la risposta all'obiezione di Minsky, ma mancano ancora dati e potenza di calcolo.
-
-#### Anni Novanta e Duemila
+#### Anni Novanta e Duemila {.ico-scacchi}
 #### La svolta statistica
 
-Si smette di scrivere regole a mano e si lascia che le macchine le ricavino dai dati.
+Alla fine degli anni Novanta, si smette di scrivere regole a mano e si lascia che le macchine le ricavino dai dati. Nel 1997 Deep Blue di IBM batte Kasparov a scacchi (con forza bruta, più che con apprendimento). 
 
-- **1997**: Deep Blue di IBM batte Kasparov a scacchi (con forza bruta, più che con apprendimento). Lo stesso anno Hochreiter e Schmidhuber inventano le reti LSTM, capaci di "ricordare" sequenze.
-- **2009**: Fei-Fei Li costruisce ImageNet, milioni di immagini etichettate.
-
-#### 2012–2016
+#### 2014-2016 {.ico-go}
 #### L'esplosione del deep learning
 
-- **2012**: AlexNet, la rete di Krizhevsky, Sutskever e Hinton, stravince la gara ImageNet usando le schede grafiche dei videogiochi (GPU). Da qui tutti passano alle reti neurali profonde.
-- **2014**: Bahdanau, Cho e Bengio introducono l'*attenzione*: nel tradurre, la rete impara a "guardare" le parole rilevanti della frase d'origine.
-- **2016**: AlphaGo di DeepMind batte Lee Sedol a Go, e Google Translate passa alle reti neurali.
+Nel 2014 Bahdanau, Cho e Bengio introducono l'*attenzione*: nel tradurre, la rete impara a "guardare" le parole rilevanti della frase d'origine. Nel 2016 AlphaGo di DeepMind batte Lee Sedol, campione mondiale di "Go", un gioco molto diffuso in alcuni paesi asiatici, sotto alcuni aspetti estremamente più complesso degli scacchi. Google Translate passa alle reti neurali.
 
-#### 2017
+#### 2017 {.ico-transformer}
 #### Il Transformer
 
-Le reti per il linguaggio avevano un limite: leggevano il testo una parola alla volta, in sequenza. Erano quindi lente da addestrare e tendevano a perdere il filo nelle frasi lunghe.
-
-Nel giugno 2017 otto ricercatori di Google pubblicano *Attention Is All You Need*, presentato a dicembre alla conferenza NIPS di Long Beach, in California. La proposta è eliminare la lettura sequenziale e tenere solo l'attenzione: ogni parola viene messa in relazione con tutte le altre contemporaneamente.
-
-Le conseguenze sono due:
+Ne abbiamo già parlato. Le conseguenze della sua introduzione sono di due tipi:
 
 1. Il modello coglie meglio i legami a distanza nel testo.
 2. Il calcolo si può distribuire in parallelo su molte GPU, quindi si possono addestrare modelli enormemente più grandi su quantità di testo prima impensabili.
@@ -195,7 +187,7 @@ Gli autori pensavano alla traduzione automatica. Nel giro di un anno su quell'ar
 
 In questi anni l'IA esce dai laboratori: la storia tecnica continua, ma diventa anche storia industriale, politica e di costume.
 
-#### 2018–2020
+#### 2018–2020 {.ico-libri}
 #### I modelli pre-addestrati
 
 Sul Transformer nasce un nuovo metodo di lavoro: prima si addestra un modello su enormi quantità di testo, senza un compito preciso, poi lo si adatta agli usi specifici.
@@ -206,16 +198,16 @@ Sul Transformer nasce un nuovo metodo di lavoro: prima si addestra un modello su
 
 Si afferma così l'idea che guiderà gli investimenti successivi: modelli più grandi, con più dati e più calcolo, acquisiscono capacità nuove.
 
-Sempre nel 2020, AlphaFold 2 di DeepMind risolve in gran parte il problema della struttura delle proteine, aperto da cinquant'anni: è il primo grande risultato scientifico dell'IA.
+Sempre nel 2020, AlphaFold 2 di DeepMind risolve in gran parte il problema della struttura delle proteine, aperto da cinquant'anni: uno dei primi grandi risultati scientifici dell’IA ([qui l'articolo originale](https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/)).
 
-#### 2021–2022
+#### 2021–2022 {.ico-chat}
 #### L'IA generativa arriva al pubblico
 
 - **2021**: GitHub Copilot comincia a scrivere codice accanto ai programmatori.
 - **2022**: DALL-E 2, Midjourney e Stable Diffusion generano immagini da una descrizione testuale.
 - **30 novembre 2022**: OpenAI pubblica ChatGPT. La tecnologia non era nuova, ma lo era l'interfaccia: una semplice chat, gratuita. Raggiunge circa cento milioni di utenti in due mesi.
 
-#### 2023
+#### 2023 {.ico-corsa}
 #### La corsa e le prime regole
 
 - Esce GPT-4, e in pochi mesi arrivano i concorrenti: Bard (poi Gemini) di Google, Claude di Anthropic, Llama di Meta, quest'ultimo distribuito liberamente.
@@ -223,18 +215,18 @@ Sempre nel 2020, AlphaFold 2 di DeepMind risolve in gran parte il problema della
 - Sempre a marzo il Garante italiano per la privacy blocca temporaneamente ChatGPT: è il primo provvedimento del genere in un paese occidentale.
 - A novembre si tiene a Bletchley Park il primo vertice internazionale sulla sicurezza dell'IA.
 
-#### 2024
+#### 2024 {.ico-bilancia}
 #### Multimodalità, Nobel e AI Act
 
 - I modelli diventano *multimodali*: leggono immagini, ascoltano, parlano.
 - Compaiono i modelli "che ragionano", cioè che elaborano il problema passo per passo prima di rispondere.
-- L'Unione Europea approva l'AI Act, la prima legge organica al mondo sul tema, in vigore dal 1° agosto.
+- L'Unione Europea approva l'[AI Act](https://digital-strategy.ec.europa.eu/it/policies/regulatory-framework-ai), la prima legge organica al mondo sul tema, in vigore dal 1° agosto.
 - A ottobre arriva la consacrazione accademica: il Nobel per la fisica va a John Hopfield e Geoffrey Hinton per le reti neurali, quello per la chimica a Demis Hassabis e John Jumper per AlphaFold (insieme a David Baker).
 
-#### 2025–2026
+#### 2025–2026 {.ico-agente}
 #### Gli agenti
 
 - A gennaio 2025 la cinese DeepSeek pubblica un modello competitivo a costi molto inferiori, mostrando che la corsa non è solo americana.
-- A settembre 2025 l'Italia approva la propria legge quadro sull'intelligenza artificiale (legge n. 132).
+- A settembre 2025 l'Italia approva la propria legge quadro sull'intelligenza artificiale, la [n. 132 del 2025](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-09-23;132!vig=2026-10-10).
 - Il passaggio decisivo è dal chatbot all'*agente*: un sistema che non si limita a rispondere, ma svolge compiti in più passaggi, cercando sul web, scrivendo ed eseguendo codice, usando programmi.
 

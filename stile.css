@@ -111,6 +111,31 @@ h4 + h4 {
   margin-top: 0.1em;
 }
 
+/* Icone accanto alle date della cronologia (classi .ico-* in index.md) */
+h4[class*="ico-"] {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+}
+
+h4[class*="ico-"]::before {
+  content: "";
+  flex: none;
+  width: 2.2em;
+  height: 2.2em;
+  border-radius: 50%;
+  background: #FAEDDA center / 72% no-repeat;
+}
+
+h4.ico-scacchi::before     { background-image: url(img/icone/scacchi.svg); }
+h4.ico-go::before          { background-image: url(img/icone/go.svg); }
+h4.ico-transformer::before { background-image: url(img/icone/transformer.svg); }
+h4.ico-libri::before       { background-image: url(img/icone/libri.svg); }
+h4.ico-chat::before        { background-image: url(img/icone/chat.svg); }
+h4.ico-corsa::before       { background-image: url(img/icone/corsa.svg); }
+h4.ico-bilancia::before    { background-image: url(img/icone/bilancia.svg); }
+h4.ico-agente::before      { background-image: url(img/icone/agente.svg); }
+
 /* ---------- Liste ---------- */
 
 ul, ol {
@@ -118,7 +143,7 @@ ul, ol {
 }
 
 li {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.2em;
   padding-left: 0.2em;
 }
 
@@ -200,6 +225,24 @@ hr {
 ::selection {
   background: var(--accento-caldo);
   color: var(--testo);
+}
+h1 + p {
+  font-size: 140%; 
+  margin-top: -20px;
+}
+
+.box {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1em 1.2em;
+  background: var(--riquadro);
+  border-left: 6px solid var(--accento);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 1.4em;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Smartphone ---------- */

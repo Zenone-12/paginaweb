@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img">
+<title>Le forbici del tokenizzatore</title>
+<desc>La parola appartamento viene tagliata in due token, apparta e mento; ogni token riceve un numero: 18.307 e 4.512. L'IA riceve solo i numeri.</desc>
+<defs>
+  <marker id="freccia" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#52514E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<style>
+  text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+</style>
+<rect width="600" height="420" fill="#FFFFFF"/>
+
+<!-- la parola intera -->
+<rect x="95" y="58" width="410" height="78" rx="12" fill="#F1EFE9" stroke="#6B6A66" stroke-width="1.2"/>
+<text x="296" y="111" text-anchor="end" font-size="40" font-weight="600" fill="#1F5A96">apparta</text>
+<text x="304" y="111" text-anchor="start" font-size="40" font-weight="600" fill="#0B6B4F">mento</text>
+
+<!-- linea di taglio -->
+<line x1="300" y1="58" x2="300" y2="146" stroke="#B23A22" stroke-width="2.5" stroke-dasharray="6 5"/>
+
+<!-- forbici (punte verso il basso) -->
+<g transform="translate(300 24)">
+  <path d="M-1 6 L3 4 L5 34 Z" fill="#8C8B87" stroke="#52514E" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M1 6 L-3 4 L-5 34 Z" fill="#B4B3AE" stroke="#52514E" stroke-width="1" stroke-linejoin="round"/>
+  <path d="M0 5 L-10 -8 M0 5 L10 -8" stroke="#B23A22" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="-13" cy="-12" r="7" fill="#FFFFFF" stroke="#B23A22" stroke-width="3.5"/>
+  <circle cx="13" cy="-12" r="7" fill="#FFFFFF" stroke="#B23A22" stroke-width="3.5"/>
+  <circle cx="0" cy="5" r="2.3" fill="#152238"/>
+</g>
+
+<!-- frecce verso i token -->
+<path d="M230 140 L170 186" fill="none" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+<path d="M370 140 L430 186" fill="none" stroke="#52514E" stroke-width="2" marker-end="url(#freccia)"/>
+
+<!-- token 1 -->
+<rect x="60" y="192" width="210" height="64" rx="10" fill="#E6F0FA" stroke="#1F5A96" stroke-width="1.2"/>
+<text x="165" y="216" text-anchor="middle" font-size="15" fill="#1F5A96">token</text>
+<text x="165" y="243" text-anchor="middle" font-size="26" font-weight="600" fill="#0E3F6E">apparta</text>
+<!-- token 2 -->
+<rect x="330" y="192" width="210" height="64" rx="10" fill="#E1F3EC" stroke="#0B6B4F" stroke-width="1.2"/>
+<text x="435" y="216" text-anchor="middle" font-size="15" fill="#0B6B4F">token</text>
+<text x="435" y="243" text-anchor="middle" font-size="26" font-weight="600" fill="#08503B">mento</text>
+
+<!-- cordini -->
+<path d="M165 256 C 160 268, 172 276, 165 290" fill="none" stroke="#8A5310" stroke-width="1.6"/>
+<path d="M435 256 C 430 268, 442 276, 435 290" fill="none" stroke="#8A5310" stroke-width="1.6"/>
+
+<!-- cartellini -->
+<g fill="#FAEDDA" stroke="#8A5310" stroke-width="1.4">
+  <path d="M165 288 L215 302 L215 348 L115 348 L115 302 Z"/>
+  <path d="M435 288 L485 302 L485 348 L385 348 L385 302 Z"/>
+</g>
+<circle cx="165" cy="298" r="3.5" fill="#FFFFFF" stroke="#8A5310" stroke-width="1.4"/>
+<circle cx="435" cy="298" r="3.5" fill="#FFFFFF" stroke="#8A5310" stroke-width="1.4"/>
+<text x="165" y="336" text-anchor="middle" font-size="24" font-weight="700" fill="#6A3E08">18.307</text>
+<text x="435" y="336" text-anchor="middle" font-size="24" font-weight="700" fill="#6A3E08">4.512</text>
+
+<!-- cosa riceve l'IA -->
+<text x="300" y="396" text-anchor="middle" font-size="19" fill="#3A3935">L'IA riceve solo i numeri: <tspan font-weight="700" fill="#6A3E08">18.307 · 4.512</tspan></text>
+</svg>
